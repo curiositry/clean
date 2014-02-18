@@ -5,5 +5,9 @@ A minimalist theme for the Python static site generator [Pelican](http://getpeli
 
 See my [GitHub Userpage](http://omphalosskeptic.github.com) for a live demo.
 
+Uses Pygments.css, Typeplate.css, and Reset.css.
+
+Typeset in Linux Libertine.
+
 ## Screenshot:
 ![Screenshot](http://omphalosskeptic.github.io/theme/images/thissite.png)
