@@ -1,4 +1,4 @@
-clean
+Clean — a theme for Pelican
 =====
 
 A minimalist theme for the Python static site generator [Pelican](http://getpelican.com). This is very much a work in progress. It works for my current purposes but has not been well tested. Expect some configuration time if you decide to use this theme.
