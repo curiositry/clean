@@ -1,0 +1,495 @@
+/* Reset.css */
+a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{background:0 0;border:0;font-size:100%;margin:0;outline:0;padding:0;vertical-align:baseline}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+/* Typeplate.css */
+@font-face{font-family:Ampersand;src:local("Georgia"),local("Garamond"),local("Palatino"),local("Book Antiqua");unicode-range:U+0026}@font-face{font-family:Ampersand;src:local("Georgia");unicode-range:U+270C}.ampersand{font-family:Ampersand,Verdana,sans-serif}.breakword{word-wrap:break-word}.normal-wrap{word-wrap:normal}.inherit-wrap{word-wrap:auto}.drop-cap:first-letter{float:left;margin:auto .25em auto auto;padding:inherit;font-size:4em;font-family:inherit;line-height:1;text-indent:0;background:0 0;color:inherit}p+.drop-cap{text-indent:0;margin-top:0}html{font:400 112.5%/1.65 serif}body{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto;word-wrap:break-word;color:#444}small{font-size:65%}h1,h2,h3,h4,h5,h6{line-height:1;margin-top:0;text-rendering:optimizeLegibility;color:#222}.tera{font-size:117px;font-size:6.5rem;margin-bottom:.25385em}.giga{font-size:90px;font-size:5rem;margin-bottom:.33em}.mega{font-size:72px;font-size:4rem;margin-bottom:.4125em}.alpha,h1{font-size:60px;font-size:3.33333rem;margin-bottom:.495em}.beta,h2{font-size:48px;font-size:2.6667rem;margin-bottom:.61875em}.gamma,h3{font-size:36px;font-size:2rem;margin-bottom:.825em}.delta,h4{font-size:24px;font-size:1.3333333333333333rem;margin-bottom:1.2375em}.epsilon,h5{font-size:21px;font-size:1.16667rem;margin-bottom:1.4142857142857141em}.zeta,h6{font-size:18px;font-size:1rem;margin-bottom:1.65em}p{margin:auto auto 1.5em}p+p{text-indent:1.5em;margin-top:-1em}abbr,acronym,blockquote,code,dir,kbd,listing,plaintext,q,samp,tt,var,xmp{-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;-o-hyphens:none;hyphens:none}pre code{word-wrap:normal;white-space:-moz-pre-wrap;white-space:pre-wrap}pre{white-space:pre}code{white-space:pre;font-family:monospace}abbr{font-variant:small-caps;font-weight:600;text-transform:lowercase;color:gray}abbr[title]:hover{cursor:help}.lining dd,.lining dt{display:inline;margin:0}.lining dd+dt:before,.lining dt+dt:before{content:"\A";white-space:pre}.lining dd+dd:before{content:", "}.lining dd:before{content:": ";margin-left:-.2em}.dictionary-style dt{display:inline;counter-reset:definitions}.dictionary-style dt+dt:before{content:", ";margin-left:-.2em}.dictionary-style dd{display:block;counter-increment:definitions}.dictionary-style dd:before{content:counter(definitions,decimal) ". "}.blockquote p:last-of-type{margin-bottom:-.825em}.blockquote+figcaption{display:block;font-size:inherit;text-align:right}.blockquote+figcaption:before{content:"-"}.pull-quote{position:relative;padding:1em}.pull-quote:after,.pull-quote:before{height:1em;opacity:.15;position:absolute;font-size:4em;color:#dc976e}.pull-quote:before{content:'“';top:0;left:0}.pull-quote:after{content:'”';bottom:0;right:0}
+
+/* Pygments.css */
+.hll{background-color:#eee}.c{color:#408090;font-style:italic}.err{border:1px solid red}.k{color:#007020;font-weight:700}.o{color:#666}.cm{color:#408090;font-style:italic}.cp{color:#007020}.c1{color:#408090;font-style:italic}.cs{background-color:#FFF0F0;color:#408090}.gd{color:#A00000}.ge{font-style:italic}.gr{color:red}.gh{color:navy;font-weight:700}.gi{color:#00A000}.go{color:#303030}.gp{color:#C65D09;font-weight:700}.gs{font-weight:700}.gu{color:purple;font-weight:700}.gt{color:#0040D0}.kc,.kd,.kn{color:#007020;font-weight:700}.kp{color:#007020}.kr{color:#007020;font-weight:700}.kt{color:#902000}.m{color:#208050}.na,.s{color:#4070A0}.nb{color:#007020}.nc{color:#0E84B5;font-weight:700}.no{color:#60ADD5}.nd{color:#555;font-weight:700}.ni{color:#D55537;font-weight:700}.ne{color:#007020}.nf{color:#06287E}.nl{color:#002070;font-weight:700}.nn{color:#0E84B5;font-weight:700}.nt{color:#062873;font-weight:700}.nv{color:#BB60D5}.ow{color:#007020;font-weight:700}.w{color:#BBB}.mf,.mh,.mi,.mo{color:#208050}.sb,.sc{color:#4070A0}.sd{color:#4070A0;font-style:italic}.s2{color:#4070A0}.se{color:#4070A0;font-weight:700}.sh{color:#4070A0}.si{color:#70A0D0;font-style:italic}.sx{color:#C65D09}.sr{color:#235388}.s1{color:#4070A0}.ss{color:#517918}.bp{color:#007020}.vc,.vg,.vi{color:#BB60D5}.il{color:#208050}
+
+
+
+
+ 
+
+
+/***** Global *****/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: Linux Libertine O, 'Linux Libertine', serif;
+    font-size: 24px;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Base typography */
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6{
+	/*font-family: Linux Libertine Capitals O, 'Linux Libertine SC', Linux Libertine O, 'Linux Libertine', serif;*/
+	/*font-weight: normal;*/
+}
+
+h3{
+	border-bottom: 3px double #eee;
+	padding-bottom: 7px;
+}
+
+.amp{
+	color:#666;
+	font-size:1.05em;
+	font-family:"Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua",serif;
+	font-style:italic;
+}  
+
+strong, b, .strong{
+	font-weight: bold;
+}
+
+em, i, .em{
+	font-style: italic;
+}
+
+/* Global Selectors */
+
+hr{
+	border: 2px solid #EEEEEE; 
+}
+
+a{
+	text-decoration: none;
+	padding-bottom: 2px;
+	border-bottom:1px solid #ccc;
+	color:#000;
+}
+
+a img, a.disabled {
+	border: 0px; text-decoration: none;
+}
+
+a:hover, a:active {	
+	background-color: #eee;
+}
+
+p{
+	margin-top: 1em !important;
+	margin-bottom: 1em;
+}
+
+ul {
+	list-style: outside disc;
+	margin: 0em 0 0 1.5em;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 0em 0 0 1.5em;
+}
+
+pre{
+	background-color:  rgb(238, 238, 238);
+	padding: 12px; 
+	margin: 10px 0; 
+	padding-bottom: 6px;
+	overflow: auto;
+	font-size: 17px;
+	line-height: 1;
+	font-family: Courier Prime, Hermit, monospace;
+}
+
+/* Quotes */
+blockquote{
+	margin: 20px 40px;
+	padding: 5px 20px;
+    border-left: 5px solid #ccc;
+    background-color: #fefefe;
+    font-style: italic;
+}
+
+
+/***** Layout *****/
+img.right, 
+figure.right{
+	float: right; 
+	margin: 0 0 2em 2em;
+}
+
+img.left, 
+figure.left{
+	float: left; 
+	margin: 0 2em 2em 0;
+}
+
+/* Header Styles */
+
+/* Hack to hide it on mobile */
+.github_ribbon{
+	display: none;
+}
+
+#banner {
+	padding: .5em 0 0 0;
+}
+
+	/* Banner */
+	#banner h1 {
+		line-height: 0;
+		margin: 35px 0 60px 0;
+	}
+
+	#banner h1 a:link, #banner h1 a:visited {
+		color: #555;
+		display: block;
+		border-bottom: none;
+		text-align: center;
+	}
+
+	#banner h1 a:hover, #banner h1 a:active {
+		background: none;
+		color: #000;
+		text-shadow: none;
+	}
+	
+	.site-subtitle {
+		font-style: italic;
+		font-weight: normal;
+		text-align: center;
+	}
+	
+
+	/* Main Nav */
+	#banner nav {
+		/*height: 40px;*/
+		padding:30px;
+		/*line-height: 25px;*/
+		margin: 0 auto;
+		padding: 0;
+		text-align: center;
+		width: 100%;
+		max-width: 800px;
+		border-top: 1px dashed #ccc;
+		border-bottom: 1px dashed #ccc;
+	
+	}
+	
+	#banner nav ul {
+		margin: 0 auto;
+		
+		display: -webkit-box; 
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+
+		-webkit-box-pack: center;
+		-moz-box-pack: center;
+		-ms-flex-pack: center;
+		-webkit-justify-content: center;
+		justify-content: center;
+	}
+
+	#banner nav li {
+		display: inline; 
+	}
+
+	#banner li:after{
+		content:" / ";
+	}
+		
+	#banner nav a{
+		margin-left: 7px;
+	}
+	
+	#banner nav a:link, #banner nav a:visited {
+		display: inline-block;
+		padding: 5px .5em;
+		border-bottom: none;
+	}
+
+	#banner li:last-of-type:after {
+		content: "";
+	}
+
+/* Featured */
+
+#featured figure {
+	border: 2px solid #eee;
+	float: right;
+	margin: 0.786em 2em 0 5em;
+	width: 248px;
+}
+
+#featured figure img {
+	display: block; float: right;
+}
+
+#featured h2 {
+	color: #666; 
+	font-size: 1.714em; 
+	margin-bottom: 0.333em;
+}
+
+#featured h3 {
+	font-size: 1.429em;
+	margin-bottom: .5em;
+}
+
+#featured h3 a:link, #featured h3 a:visited {
+	color: #000305;
+}
+
+/* Body */
+
+#content {
+	margin-bottom: 2em;
+	padding: 20px 0;
+}
+
+/* Extras */
+#extras {margin: 0 auto 3em auto; overflow: hidden;}
+
+#extras ul {list-style: none; margin: 0;}
+#extras li {border-bottom: 1px solid #fff;}
+#extras h2 {
+	color: #666;
+	font-size: 1.429em;
+	margin-bottom: .25em;
+	padding: 0 3px;
+}
+
+#extras a:link, #extras a:visited {
+}
+
+#extras a:hover, #extras a:active {}
+
+	/* Blogroll */
+	#extras .blogroll {
+		float: left;
+		width: 100%;
+	}
+	
+	#extras .blogroll li {float: left; margin: 0 20px 0 0;}
+	
+	/* Social */
+	#extras .social {
+		float: right;
+		width: 175px;
+	}
+	
+	#extras div[class='social'] a {
+		background-repeat: no-repeat;
+		background-position: 3px 6px;
+		padding-left: 25px;
+	}
+	
+		/* Icons */
+		/*.social*/ a[href*='about.me'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/aboutme.png');}
+		/*.social*/ a[href*='bitbucket.org'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/bitbucket.png');}
+		/*.social*/ a[href*='delicious.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/delicious.png');}
+		/*.social*/ a[href*='digg.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/digg.png');}
+		/*.social*/ a[href*='facebook.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/facebook.png');}
+		/*.social*/ a[href*='gitorious.org'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/gitorious.png');}
+		/*.social*/ a[href*='github.com'],
+		/*.social*/ a[href*='git.io'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/github.png');}
+		/*.social*/ a[href*='gittip.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/gittip.png');}
+		/*.social*/ a[href*='plus.google.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/google-plus.png');}
+		/*.social*/ a[href*='groups.google.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/google-groups.png');}
+		/*.social*/ a[href*='news.ycombinator.com'],
+		/*.social*/ a[href*='hackernewsers.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/hackernews.png');}
+		/*.social*/ a[href*='last.fm'], .social a[href*='lastfm.'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/lastfm.png');}
+		/*.social*/ a[href*='linkedin.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/linkedin.png');}
+		/*.social*/ a[href*='reddit.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/reddit.png');}
+		/*.social*/ a[type$='atom+xml'], .social a[type$='rss+xml'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/rss.png');}
+		/*.social*/ a[href*='slideshare.net'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/slideshare.png');}
+		/*.social*/ a[href*='speakerdeck.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/speakerdeck.png');}
+		/*.social*/ a[href*='stackoverflow.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/stackoverflow.png');}
+		/*.social*/ a[href*='twitter.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/twitter.png');}
+		/*.social*/ a[href*='vimeo.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/vimeo.png');}
+		/*.social*/ a[href*='youtube.com'] {background-repeat: no-repeat;background-position: 3px 6px;padding-left: 25px;background-image: url('http://omphalosskeptic.github.io/theme/images/icons/youtube.png');}
+
+
+#about .primary {float: left; width: 165px;}
+#about .primary strong {color: #C64350; display: block; font-size: 1.286em;}
+#about .photo {float: left; margin: 5px 20px;}
+
+#about .url:link, #about .url:visited {text-decoration: none;}
+
+#about .bio {float: right; width: 500px;}
+
+
+
+/* Footer */
+#contentinfo {padding-bottom: 2em; text-align: center;}
+
+/***** Sections *****/
+/* Blog */
+.hentry {
+	display: block;
+	clear: both;
+	border-bottom: 1px solid #eee;
+	padding: 1.5em 0;
+}
+li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
+#content > .hentry {padding: 1em 0;}
+.hentry img{display : none ;}
+.entry-title {/*font-size: 3em;*/ margin-bottom: 10px; margin-top: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;line-height: 1.4;}
+.entry-title a:visited {background-color: #fff;}
+
+.hentry .post-info * {font-style: normal;display: inline-block;}
+
+.post-info p{
+	text-indent: 0 !important;
+	line-height: 1.4;
+}
+
+	/* Content */
+	.hentry footer {margin-bottom: 2em;}
+	.hentry footer address {display: inline;}
+	#posts-list footer address {display: block;}
+
+	/* Blog Index */
+	#posts-list {list-style: none; margin: 0;}
+	#posts-list .hentry {padding-left: 10px; position: relative;}
+	
+	#posts-list footer {
+		left: 10px;
+		position: relative;
+        float: left;
+		top: 0.5em;
+		width: 190px;
+	}
+	
+	/* About the Author */
+	#about-author {
+		background: #f9f9f9;
+		clear: both;
+		font-style: normal;
+		margin: 2em 0;
+		padding: 10px 20px 15px 20px;
+		
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+	#about-author strong {
+		color: #C64350;
+		clear: both;
+		display: block;
+		font-size: 1.429em;
+	}
+	
+	#about-author .photo {border: 1px solid #ddd; float: left; margin: 5px 1em 0 0;}
+	
+	/* Comments */
+	#comments-list {list-style: none; margin: 0 1em;}
+	#comments-list blockquote {
+		background: #f8f8f8;
+		clear: both;
+		font-style: normal;
+		margin: 0;
+		padding: 15px 20px;
+		
+		border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	#comments-list footer {color: #888; padding: .5em 1em 0 0; text-align: right;}
+	
+	#comments-list li:nth-child(2n) blockquote {background: #F5f5f5;}
+	
+	/* Add a Comment */
+	#add-comment label {clear: left; float: left; text-align: left; width: 150px;}
+	#add-comment input[type='text'],
+	#add-comment input[type='email'],
+	#add-comment input[type='url'] {float: left; width: 200px;}
+	
+	#add-comment textarea {float: left; height: 150px; width: 495px;}
+	
+	#add-comment p.req {clear: both; margin: 0 .5em 1em 0; text-align: right;}
+	
+	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
+	#add-comment * {margin-bottom: .5em;}
+
+
+
+
+
+
+
+
+@media all and (min-width: 800px) and (min-device-width : 480px){
+	#banner h1{
+		font-size: 2.2em;
+	}
+
+	.github_ribbon{
+		display: block;
+	}
+
+}
+
+
+@font-face {
+      font-family: 'Linux Libertine Display';
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_dr-webfont.eot');
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_dr-webfont.eot?#iefix') format('embedded-opentype'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_dr-webfont.woff') format('woff'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_dr-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+
+  @font-face {
+      font-family: 'Linux Libertine';
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_r-webfont.eot');
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_r-webfont.eot?#iefix') format('embedded-opentype'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_r-webfont.woff') format('woff'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_r-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+
+  }
+
+  @font-face {
+      font-family: 'Linux Libertine';
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_rb-webfont.eot');
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_rb-webfont.eot?#iefix') format('embedded-opentype'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_rb-webfont.woff') format('woff'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_rb-webfont.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+
+  }
+
+  @font-face {
+      font-family: 'Linux Libertine';
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_ri-webfont.eot');
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_ri-webfont.eot?#iefix') format('embedded-opentype'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_ri-webfont.woff') format('woff'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_ri-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: italic;
+
+  }
+
+  @font-face {
+      font-family: 'Linux Libertine SC';
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_as-webfont.eot');
+      src: url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_as-webfont.eot?#iefix') format('embedded-opentype'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_as-webfont.woff') format('woff'),
+           url('http://omphalosskeptic.github.io/theme/fonts/linlibertine_as-webfont.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
