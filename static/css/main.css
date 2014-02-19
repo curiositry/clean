@@ -24,11 +24,13 @@ a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,
 /* Body */
 body {
     font-family: Linux Libertine O, 'Linux Libertine', serif;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1.4;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Base typography */
@@ -142,6 +144,7 @@ figure.left{
 
 	/* Banner */
 	#banner h1 {
+		font-size: 1.9em;
 		line-height: 0;
 		margin: 35px 0 60px 0;
 	}
@@ -435,6 +438,10 @@ li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 	.github_ribbon{
 		display: block;
+	}
+
+	body{
+		font-size:24px;
 	}
 
 }
