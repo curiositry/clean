@@ -168,7 +168,7 @@ figure.left{
 		text-align: center;
 	}
 	
-	r, #banner h1 a:active {
+	#banner h1 a:active {
 		background: none;
 		color: #000;
 		text-shadow: none;
