@@ -2,6 +2,9 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="MobileOptimized" content="320">
+        <meta name="HandheldFriendly" content="True">
         <title>{% block title %}{{ SITENAME }}{%endblock%}{{ SITE_TITLE }}</title>
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
         {% if FEED_ALL_ATOM %}
@@ -21,7 +24,11 @@
         <header id="banner" class="body">
                 {% if SITESUBTITLE %} <h4 class="site-subtitle">{{ SITESUBTITLE }}</h4>
                 {% endif %}
+                {% if LOGOURL %}
+                <section class="logo"><a href="{{ SITEURL }}/"><img src="{{ SITEURL }}/{{ LOGOURL }}" alt="Logo Banner" /> </a></section><br>
+                {% else %}
                 <h1><a href="{{ SITEURL }}/">{{ SITENAME }} </a></h1>
+                {% endif %}
                 <nav><ul>
                 {% for title, link in MENUITEMS %}
                     <li><a href="{{ link }}">{{ title }}</a></li>
@@ -74,7 +81,7 @@
                 <address id="about" class="vcard body">
                 &copy; 2014 Omphalosskeptic — Proudly powered by <a href="http://getpelican.com/">Pelican</a> <span class="amp">&amp;</span> <a href="http://typeplate.com">Typeplate</a>.
                 </address><!-- /#about -->
-                <p><a href="http://github.com/omphalosskeptic/omphalosskeptic.github.io">Clean</a> theme by <a href="http://omphalosskeptic.github.io">Omphalosskeptic</a>
+                <p><a href="http://github.com/omphalosskeptic/clean">Clean</a> theme by <a href="http://omphalosskeptic.github.io">Omphalosskeptic</a>
         </footer><!-- /#contentinfo -->
 
 {% include 'analytics.html' %}

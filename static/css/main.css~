@@ -168,41 +168,6 @@ figure.left{
 		text-align: center;
 	}
 	
-	r, #banner h1 a:active {
-		background: none;
-		color: #000;
-		text-shadow: none;
-	}
-
-	#banner .logo a{
-		width: 100%;
-		display: block;
-		margin: 0 auto;
-
-		display: -webkit-box; 
-		display: -moz-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-
-		-webkit-box-pack: center;
-		-moz-box-pack: center;
-		-ms-flex-pack: center;
-		-webkit-justify-content: center;
-		justify-content: center;
-
-	}
-
-	#banner .logo a img{
-		width: 80%;
-		margin: 0 auto;
-	}
-
-	.logo a:hover, .logo a{
-		background-color: rgba(0,0,0,0);
-		border-bottom: none;
-	}
-	
 
 	/* Main Nav */
 	#banner nav {

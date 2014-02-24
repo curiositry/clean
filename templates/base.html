@@ -24,7 +24,11 @@
         <header id="banner" class="body">
                 {% if SITESUBTITLE %} <h4 class="site-subtitle">{{ SITESUBTITLE }}</h4>
                 {% endif %}
+                {% if LOGOURL %}
+                <section class="logo"><a href="{{ SITEURL }}/"><img src="{{ SITEURL }}/{{ LOGOURL }}" alt="{{ SITENAME }} Banner" /> </a></section><br>
+                {% else %}
                 <h1><a href="{{ SITEURL }}/">{{ SITENAME }} </a></h1>
+                {% endif %}
                 <nav><ul>
                 {% for title, link in MENUITEMS %}
                     <li><a href="{{ link }}">{{ title }}</a></li>
